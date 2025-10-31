@@ -28,10 +28,143 @@ const AITransparency = () => {
             <p className="text-muted-foreground">Last updated: {new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</p>
           </div>
 
-          <div className="prose prose-slate max-w-none">
-            <div className="bg-muted/50 border border-border rounded-lg p-8 text-center">
-              <p className="text-muted-foreground">Content will be added here</p>
-            </div>
+          <div className="prose prose-slate max-w-none space-y-8">
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">1. Purpose</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                At <strong>McCarthy Solutions</strong>, we use artificial intelligence (AI) responsibly to enhance how we deliver <strong>training, strategy, and implementation</strong> services.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                This notice explains how and where AI is used in our work, how human oversight is maintained, and how we protect your data and trust.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Our goal is simple: use AI to <strong>amplify human expertise, not replace it.</strong>
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">2. How We Use AI</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We use AI tools in limited, clearly defined ways to support:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li><strong>Content drafting and ideation</strong> (e.g., workshop materials, reports, email templates)</li>
+                <li><strong>Data analysis and insight generation</strong> for client projects</li>
+                <li><strong>Process automation</strong> to streamline internal operations (e.g., document management, scheduling)</li>
+                <li><strong>Prototype development</strong> of AI-powered tools or dashboards during implementation projects</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mt-4">
+                All outputs are <strong>reviewed, edited, and validated by humans</strong> before being shared or deployed.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">3. Human Oversight</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                AI supports our work — it does not make decisions on behalf of clients.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                Every deliverable, recommendation, or model output is <strong>reviewed by qualified consultants</strong> before it reaches you.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We maintain:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Human-in-the-loop review for all AI-assisted materials</li>
+                <li>Internal documentation of AI use within each project</li>
+                <li>Version control and audit logs for AI-generated content where relevant</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">4. Data Protection and Privacy</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                We never input <strong>personal, confidential, or sensitive client data</strong> into third-party AI tools unless:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                <li>We have your explicit consent, and</li>
+                <li>The tool provider meets GDPR and equivalent international data protection standards</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed">
+                We favour <strong>local, privacy-respecting tools</strong> or enterprise integrations that keep your data secure.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                For more details, please see our <Link to="/legal#privacy-policy" className="text-primary hover:underline">Privacy Policy</Link>.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">5. AI Risk Management</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                McCarthy Solutions conducts <strong>lightweight AI impact reviews</strong> at the start of relevant projects.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                These reviews consider:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                <li>Whether AI use could introduce bias or misleading outputs</li>
+                <li>How human review mitigates reputational or ethical risk</li>
+                <li>Whether the project changes our overall AI risk classification</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Our work currently falls under <strong>"low-risk" AI usage</strong> as defined by the <strong>EU AI Act</strong>, since:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>We do not deploy AI in high-risk sectors (e.g., employment screening, public safety)</li>
+                <li>We do not use biometric, surveillance, or fully automated decision systems</li>
+                <li>AI is used only as a <strong>support tool</strong> under human supervision</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">6. Governance and Accountability</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                McCarthy Solutions maintains clear internal practices to ensure that all AI use remains ethical, transparent, and compliant.
+              </p>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                Accountability sits with <strong>the lead consultant on each engagement</strong>, who is responsible for:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground mb-4">
+                <li>Reviewing how AI tools are selected and applied</li>
+                <li>Ensuring human review of all AI-assisted outputs before delivery</li>
+                <li>Verifying that no personal or confidential data is entered into AI systems</li>
+                <li>Staying informed about evolving best practice and regulation</li>
+              </ul>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                <strong>Where projects involve collaborators or subcontractors</strong>, they must follow the same <strong>AI governance and privacy standards</strong> that guide McCarthy Solutions — including:
+              </p>
+              <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
+                <li>Responsible use of AI under human review</li>
+                <li>Respect for client confidentiality and data protection laws</li>
+                <li>No unauthorised use of client materials in third-party AI tools</li>
+                <li>Alignment with the ethical principles outlined in this Transparency Notice and our Privacy Policy</li>
+              </ul>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">7. Review and Continuous Improvement</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                This transparency notice is reviewed <strong>twice per year</strong> or whenever our use of AI materially changes.
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                We regularly monitor updates to the <strong>EU AI Act</strong> and other regulatory frameworks to ensure compliance and best practice.
+              </p>
+            </section>
+
+            <section>
+              <h2 className="text-2xl font-semibold mb-4 text-foreground">8. Questions or Concerns</h2>
+              <p className="text-muted-foreground leading-relaxed mb-4">
+                If you have any questions about how AI is used in our work, please contact:
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                <a href="mailto:ai-governance@mccarthy-solutions.com" className="text-primary hover:underline font-semibold">
+                  ai-governance@mccarthy-solutions.com
+                </a>
+              </p>
+              <p className="text-muted-foreground leading-relaxed">
+                We welcome questions, audits, and discussions about ethical AI - transparency builds trust, and trust builds great work.
+              </p>
+            </section>
           </div>
         </div>
       </main>
