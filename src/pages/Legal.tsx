@@ -624,6 +624,9 @@ const Legal = () => {
                 >
                   Cookie Policy
                 </button>
+                <Link to="/ai-transparency-notice" className="block text-muted-foreground hover:text-foreground transition-colors">
+                  AI Transparency Notice
+                </Link>
               </div>
             </div>
           </div>
