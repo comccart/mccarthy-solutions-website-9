@@ -709,9 +709,9 @@ const Index = () => {
             <div>
               <h4 className="font-semibold mb-4 text-foreground">Legal</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-accent transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-accent transition-colors">Cookie Policy</a></li>
+                <li><Link to="/legal#privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/legal#terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link></li>
+                <li><Link to="/legal#cookie-policy" className="hover:text-accent transition-colors">Cookie Policy</Link></li>
               </ul>
             </div>
           </div>
