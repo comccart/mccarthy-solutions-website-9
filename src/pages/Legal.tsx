@@ -575,59 +575,62 @@ const Legal = () => {
       </main>
 
       {/* Footer */}
-      <footer className="bg-muted border-t border-border">
-        <div className="container mx-auto px-6 py-12">
-          <div className="grid md:grid-cols-3 gap-8 mb-8">
+      <footer className="bg-muted/30 border-t border-border">
+        <div className="container mx-auto px-4 py-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
+                <img src={chevronLogo} alt="McCarthy Solutions" className="w-7 h-7" />
                 <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
               </div>
-              <p className="text-muted-foreground">
-                AI consultancy for professionals who want to work smarter, not harder.
-              </p>
+              <p className="text-muted-foreground text-sm">AI consultant for consultants and SME leaders.</p>
             </div>
-
             <div>
-              <h3 className="font-semibold mb-4 text-foreground">Quick Links</h3>
-              <div className="space-y-2">
-                <Link to="/#services" className="block text-muted-foreground hover:text-foreground transition-colors">
-                  Services
-                </Link>
-                <Link to="/#process" className="block text-muted-foreground hover:text-foreground transition-colors">
-                  Process
-                </Link>
-                <Link to="/case-studies" className="block text-muted-foreground hover:text-foreground transition-colors">
-                  Case Studies
-                </Link>
-              </div>
+              <h4 className="font-semibold mb-4 text-foreground">Services</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/#services" className="hover:text-accent transition-colors">AI Training</Link></li>
+                <li><Link to="/#services" className="hover:text-accent transition-colors">Strategy & Advisory</Link></li>
+                <li><Link to="/#services" className="hover:text-accent transition-colors">Implementation</Link></li>
+              </ul>
             </div>
-
             <div>
-              <h3 className="font-semibold mb-4 text-foreground">Legal</h3>
-              <div className="space-y-2">
-                <button 
-                  onClick={() => scrollToSection('privacy-policy')} 
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
-                >
-                  Privacy Policy
-                </button>
-                <button 
-                  onClick={() => scrollToSection('terms-of-service')} 
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
-                >
-                  Terms of Service
-                </button>
-                <button 
-                  onClick={() => scrollToSection('cookie-policy')} 
-                  className="block text-muted-foreground hover:text-foreground transition-colors text-left"
-                >
-                  Cookie Policy
-                </button>
-                <Link to="/ai-transparency-notice" className="block text-muted-foreground hover:text-foreground transition-colors">
-                  AI Transparency Notice
-                </Link>
-              </div>
+              <h4 className="font-semibold mb-4 text-foreground">Company</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/#process" className="hover:text-accent transition-colors">Process</Link></li>
+                <li><Link to="/#results" className="hover:text-accent transition-colors">Results</Link></li>
+                <li><Link to="/#testimonials" className="hover:text-accent transition-colors">Testimonials</Link></li>
+                <li><Link to="/case-studies" className="hover:text-accent transition-colors">Case Studies</Link></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 text-foreground">Legal</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('privacy-policy')} 
+                    className="hover:text-accent transition-colors text-left"
+                  >
+                    Privacy Policy
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('terms-of-service')} 
+                    className="hover:text-accent transition-colors text-left"
+                  >
+                    Terms of Service
+                  </button>
+                </li>
+                <li>
+                  <button 
+                    onClick={() => scrollToSection('cookie-policy')} 
+                    className="hover:text-accent transition-colors text-left"
+                  >
+                    Cookie Policy
+                  </button>
+                </li>
+                <li><Link to="/ai-transparency-notice" className="hover:text-accent transition-colors">AI Transparency Notice</Link></li>
+              </ul>
             </div>
           </div>
 
