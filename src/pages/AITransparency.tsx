@@ -241,6 +241,7 @@ const AITransparency = () => {
                 <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
               </div>
               <p className="text-muted-foreground text-sm">AI consultant for consultants and SME leaders.</p>
+              <p className="text-muted-foreground text-sm italic mt-3">"The illiterate of the 21st century will be those who cannot learn, unlearn, and relearn." - Alvin Toffler</p>
             </div>
             <div>
               <h4 className="font-semibold mb-4 text-foreground">Services</h4>
