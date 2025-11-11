@@ -661,32 +661,35 @@ const Index = () => {
             border: '1px solid rgba(245, 241, 237, 0.1)'
           }}>
               <div className="space-y-4">
-                {/* Name Field */}
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-2" style={{
-                  color: '#F5F1ED'
-                }}>
-                    Your Name
-                  </label>
-                  <input type="text" id="name" name="name" required placeholder="John Smith" className="w-full h-12 px-4 rounded-lg border focus:outline-none focus:ring-2 transition-all" style={{
-                  backgroundColor: '#F5F1ED',
-                  color: '#2E294E',
-                  borderColor: 'rgba(46, 41, 78, 0.2)'
-                }} onFocus={e => e.target.style.borderColor = '#FBA60C'} onBlur={e => e.target.style.borderColor = 'rgba(46, 41, 78, 0.2)'} />
-                </div>
+                {/* Grid container for Name and Email - side by side on desktop */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {/* Name Field */}
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium mb-2" style={{
+                    color: '#F5F1ED'
+                  }}>
+                      Your Name
+                    </label>
+                    <input type="text" id="name" name="name" required placeholder="John Smith" className="w-full h-12 px-4 rounded-lg border focus:outline-none focus:ring-2 transition-all" style={{
+                    backgroundColor: '#F5F1ED',
+                    color: '#2E294E',
+                    borderColor: 'rgba(46, 41, 78, 0.2)'
+                  }} onFocus={e => e.target.style.borderColor = '#FBA60C'} onBlur={e => e.target.style.borderColor = 'rgba(46, 41, 78, 0.2)'} />
+                  </div>
 
-                {/* Email Field */}
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-2" style={{
-                  color: '#F5F1ED'
-                }}>
-                    Your Email
-                  </label>
-                  <input type="email" id="email" name="email" required placeholder="john@example.com" className="w-full h-12 px-4 rounded-lg border focus:outline-none focus:ring-2 transition-all" style={{
-                  backgroundColor: '#F5F1ED',
-                  color: '#2E294E',
-                  borderColor: 'rgba(46, 41, 78, 0.2)'
-                }} onFocus={e => e.target.style.borderColor = '#FBA60C'} onBlur={e => e.target.style.borderColor = 'rgba(46, 41, 78, 0.2)'} />
+                  {/* Email Field */}
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium mb-2" style={{
+                    color: '#F5F1ED'
+                  }}>
+                      Your Email
+                    </label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com" className="w-full h-12 px-4 rounded-lg border focus:outline-none focus:ring-2 transition-all" style={{
+                    backgroundColor: '#F5F1ED',
+                    color: '#2E294E',
+                    borderColor: 'rgba(46, 41, 78, 0.2)'
+                  }} onFocus={e => e.target.style.borderColor = '#FBA60C'} onBlur={e => e.target.style.borderColor = 'rgba(46, 41, 78, 0.2)'} />
+                  </div>
                 </div>
 
                 {/* Message Field */}
