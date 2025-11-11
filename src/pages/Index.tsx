@@ -651,6 +651,108 @@ const Index = () => {
             Book a free strategy call. We'll talk about your work and where AI can help.
           </p>
           
+          {/* Contact Form */}
+          <div className="mt-8 mb-6">
+            <p className="text-sm font-medium mb-4" style={{ color: '#F5F1ED', opacity: 0.9 }}>
+              Or send us a quick message:
+            </p>
+            
+            <form
+              action="https://formspree.io/f/mjkjvoro"
+              method="POST"
+              className="max-w-md mx-auto p-6 rounded-xl"
+              style={{
+                backgroundColor: 'rgba(245, 241, 237, 0.05)',
+                border: '1px solid rgba(245, 241, 237, 0.1)'
+              }}
+            >
+              <div className="space-y-4">
+                {/* Name Field */}
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium mb-2" style={{ color: '#F5F1ED' }}>
+                    Your Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="John Smith"
+                    className="w-full h-12 px-4 rounded-lg border focus:outline-none focus:ring-2 transition-all"
+                    style={{
+                      backgroundColor: '#F5F1ED',
+                      color: '#2E294E',
+                      borderColor: 'rgba(46, 41, 78, 0.2)'
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#FBA60C'}
+                    onBlur={(e) => e.target.style.borderColor = 'rgba(46, 41, 78, 0.2)'}
+                  />
+                </div>
+
+                {/* Email Field */}
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium mb-2" style={{ color: '#F5F1ED' }}>
+                    Your Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="john@example.com"
+                    className="w-full h-12 px-4 rounded-lg border focus:outline-none focus:ring-2 transition-all"
+                    style={{
+                      backgroundColor: '#F5F1ED',
+                      color: '#2E294E',
+                      borderColor: 'rgba(46, 41, 78, 0.2)'
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#FBA60C'}
+                    onBlur={(e) => e.target.style.borderColor = 'rgba(46, 41, 78, 0.2)'}
+                  />
+                </div>
+
+                {/* Message Field */}
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium mb-2" style={{ color: '#F5F1ED' }}>
+                    Your Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    placeholder="Tell us what you're looking for..."
+                    className="w-full px-4 py-3 rounded-lg border focus:outline-none focus:ring-2 transition-all resize-y"
+                    style={{
+                      backgroundColor: '#F5F1ED',
+                      color: '#2E294E',
+                      borderColor: 'rgba(46, 41, 78, 0.2)',
+                      minHeight: '120px'
+                    }}
+                    onFocus={(e) => e.target.style.borderColor = '#FBA60C'}
+                    onBlur={(e) => e.target.style.borderColor = 'rgba(46, 41, 78, 0.2)'}
+                  />
+                </div>
+
+                {/* Submit Button */}
+                <button
+                  type="submit"
+                  className="w-full h-12 rounded-lg font-bold shadow-lg hover:scale-105 transition-transform"
+                  style={{
+                    backgroundColor: '#FBA60C',
+                    color: '#2E294E'
+                  }}
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+
+          {/* Divider Text */}
+          <p className="text-sm font-medium my-6" style={{ color: '#F5F1ED', opacity: 0.7 }}>
+            Or book a call directly:
+          </p>
+          
           <div className="flex flex-wrap items-center justify-center gap-4 mb-8">
             <Button size="lg" className="text-lg px-8 shadow-lg" style={{
             backgroundColor: '#FBA60C',
