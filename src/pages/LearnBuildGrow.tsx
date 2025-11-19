@@ -102,7 +102,7 @@ const LearnBuildGrow = () => {
                     Strategy
                   </Badge>
                   <CardTitle className="text-2xl text-foreground">
-                    The leaders who excel with Al think differently, not faster
+                    The leaders who excel with Al think differently, not faster.
                   </CardTitle>
                   <CardDescription className="text-base">
                     Most teams rush to tools. Strategy starts earlier. This article looks at how leaders can use AI to sharpen thinking, make better choices, and focus on the work that actually moves the needle.
