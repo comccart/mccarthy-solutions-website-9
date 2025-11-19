@@ -167,35 +167,29 @@ const AIStrategyThinkClearly = () => {
               Speed’s easy. Quality’s harder. Don’t stop at faster output—aim for sharper thinking.
               <br />
               <br />
-              That might look like: 
-              - Running the numbers before you bet the quarter 
-              - Turning rough thoughts into sharp decisions 
-              - Getting from idea
-              to action before the mood changes 
-              - Giving your teams a shared brain, not another dusty Notion doc
+              That might look like: - Running the numbers before you bet the quarter - Turning rough thoughts into sharp
+              decisions - Getting from idea to action before the mood changes - Giving your teams a shared brain, not
+              another dusty Notion doc
               <br />
               <br />
-              Smart
-              strategy relies on clear thinking and pattern-spotting. AI can support both, if you stop treating it like
-              a fancy calculator.
+              Smart strategy relies on clear thinking and pattern-spotting. AI can support both, if you stop treating it
+              like a fancy calculator.
               <br />
               <br />
               <strong>3. Are we building capability—or just another crutch?</strong>
               <br />
               <br />
-              If your team falls over when
-              the AI’s off, you've built the wrong system.
+              If your team falls over when the AI’s off, you've built the wrong system.
               <br />
               <br />
-              The right setup helps people think better, not think less. It
-              should stretch judgement, not replace it.
+              The right setup helps people think better, not think less. It should stretch judgement, not replace it.
               <br />
               <br />
-              This isn’t about writing an AI strategy doc and calling it done.
-              It’s about rewiring how your team learns, thinks, and decides—week in, week out.
+              This isn’t about writing an AI strategy doc and calling it done. It’s about rewiring how your team learns,
+              thinks, and decides—week in, week out.
               <br />
               <br />
-              <srtong>One last thing</strong>
+              <strong>One last thing</strong>
               Leaders who win with AI treat it like a thinking partner. Not a shortcut. Not a gimmick. Not a toy. Get
               good at thinking with it. Build habits that actually stick. Grow a team that’s ready for whatever strange,
               brilliant thing comes next.
