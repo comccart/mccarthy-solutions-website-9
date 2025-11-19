@@ -307,11 +307,11 @@ const Index = () => {
           </div>
 
           {/* Consultancy Clients Section - Animated Carousel */}
-          <div className="mb-8">
+          <div className="mb-2">
             <h3 className="text-lg font-semibold text-muted-foreground mb-6 text-center">
               Some of my current/past consultancy clients.
             </h3>
-            <div className="relative overflow-hidden py-8">
+            <div className="relative overflow-hidden py-4">
               <div className="flex gap-12 animate-scroll">
                 {[...logos, ...logos].map((logo, i) => (
                   <div key={i} className="flex-shrink-0">
