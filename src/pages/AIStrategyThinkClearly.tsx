@@ -173,7 +173,7 @@ const AIStrategyThinkClearly = () => {
                 <li>Turning rough thoughts into sharp decisions</li>
                 <li>Getting from idea to action before the mood changes</li>
                 <li>Giving your teams a shared brain, not another dusty Notion doc</li>
-              </ul>
+              </ol>
               Smart strategy relies on clear thinking and pattern-spotting. AI can support both, if you stop treating it
               like a fancy calculator.
               <br />
