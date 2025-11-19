@@ -155,6 +155,7 @@ const Index = () => {
               <a href="#process" className="text-foreground hover:text-accent transition-colors">Process</a>
               <a href="#results" className="text-foreground hover:text-accent transition-colors">Results</a>
               <a href="#testimonials" className="text-foreground hover:text-accent transition-colors">Testimonials</a>
+              <Link to="/learn-build-grow-with-ai" className="text-foreground hover:text-accent transition-colors">Learn</Link>
               <Link to="/case-studies" className="text-foreground hover:text-accent transition-colors">Case Studies</Link>
             </div>
 
@@ -190,6 +191,9 @@ const Index = () => {
                     <a href="#testimonials" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Testimonials
                     </a>
+                    <Link to="/learn-build-grow-with-ai" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Learn
+                    </Link>
                     <Link to="/case-studies" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Case Studies
                     </Link>

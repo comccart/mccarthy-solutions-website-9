@@ -1,0 +1,188 @@
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Menu, ArrowRight } from "lucide-react";
+import { useState } from "react";
+import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
+import chevronLogo from "@/assets/chevron-logo.png";
+
+const LearnBuildGrow = () => {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  return (
+    <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <Link to="/" className="flex items-center gap-2">
+              <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
+              <div className="text-2xl font-bold text-foreground">McCarthy Solutions</div>
+            </Link>
+            
+            <div className="hidden md:flex items-center gap-8">
+              <Link to="/#services" className="text-foreground hover:text-accent transition-colors">Services</Link>
+              <Link to="/#process" className="text-foreground hover:text-accent transition-colors">Process</Link>
+              <Link to="/#results" className="text-foreground hover:text-accent transition-colors">Results</Link>
+              <Link to="/#testimonials" className="text-foreground hover:text-accent transition-colors">Testimonials</Link>
+              <Link to="/learn-build-grow-with-ai" className="text-accent font-semibold transition-colors">Learn</Link>
+              <Link to="/case-studies" className="text-foreground hover:text-accent transition-colors">Case Studies</Link>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Button 
+                variant="default" 
+                size="lg" 
+                className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" 
+                onClick={() => window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank')}
+              >
+                Book free intro call
+              </Button>
+              
+              <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                <DrawerTrigger asChild>
+                  <Button variant="ghost" size="icon" className="md:hidden">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </DrawerTrigger>
+                <DrawerContent>
+                  <DrawerHeader>
+                    <DrawerTitle>Menu</DrawerTitle>
+                  </DrawerHeader>
+                  <div className="flex flex-col gap-4 p-4">
+                    <Link to="/#services" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Services
+                    </Link>
+                    <Link to="/#process" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Process
+                    </Link>
+                    <Link to="/#results" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Results
+                    </Link>
+                    <Link to="/#testimonials" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Testimonials
+                    </Link>
+                    <Link to="/learn-build-grow-with-ai" className="text-lg text-primary font-semibold transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Learn
+                    </Link>
+                    <Link to="/case-studies" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Case Studies
+                    </Link>
+                    <Button 
+                      variant="default" 
+                      size="lg" 
+                      className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg mt-4" 
+                      onClick={() => {
+                        window.open('https://calendar.app.google/PaVwZ8ZxYX5SVBJT8', '_blank');
+                        setMobileMenuOpen(false);
+                      }}
+                    >
+                      Book free intro call
+                    </Button>
+                  </div>
+                </DrawerContent>
+              </Drawer>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="pt-32 pb-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+              Learn, Build, Grow with AI.
+            </h1>
+            <p className="text-xl text-muted-foreground">
+              This is where I share longer thinking about how leaders can learn, build, and grow with AI. Three core themes. One simple aim. Help you work better with AI in the real world.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Cards Section */}
+      <section className="py-16 bg-background">
+        <div className="container mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid md:grid-cols-3 gap-8">
+              
+              {/* Card 1 - Strategy */}
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardHeader>
+                  <Badge variant="secondary" className="mb-4 w-fit">
+                    Strategy
+                  </Badge>
+                  <CardTitle className="text-2xl text-foreground">
+                    Think Clearly in an AI-Shaped World
+                  </CardTitle>
+                  <CardDescription className="text-base">
+                    Most teams rush to tools. Strategy starts earlier. This article looks at how leaders can use AI to sharpen thinking, make better choices, and focus on the work that actually moves the needle.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Link to="/ai-strategy-think-clearly">
+                    <Button variant="default" className="w-full gap-2">
+                      Read More
+                      <ArrowRight className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              {/* Card 2 - Training */}
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardHeader>
+                  <Badge variant="secondary" className="mb-4 w-fit">
+                    Training
+                  </Badge>
+                  <CardTitle className="text-2xl text-foreground">
+                    AI Literacy Is Now a Leadership Skill
+                  </CardTitle>
+                  <CardDescription className="text-base">
+                    AI training is not about prompts. It is about confidence, judgement, and clear workflows. This article shows how to teach teams to work with AI without fear, jargon, or overwhelm.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Link to="/ai-training-leadership-skill">
+                    <Button variant="default" className="w-full gap-2">
+                      Read More
+                      <ArrowRight className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+              {/* Card 3 - Implementation */}
+              <Card className="border-2 hover:border-primary/50 transition-all hover:shadow-lg">
+                <CardHeader>
+                  <Badge variant="secondary" className="mb-4 w-fit">
+                    Implementation
+                  </Badge>
+                  <CardTitle className="text-2xl text-foreground">
+                    Build AI Systems That Make Work Lighter
+                  </CardTitle>
+                  <CardDescription className="text-base">
+                    Most organisations do not need more tools. They need simple systems that fit into everyday work. This article explains how to design AI workflows that remove friction and support people instead of replacing them.
+                  </CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Link to="/ai-implementation-make-work-lighter">
+                    <Button variant="default" className="w-full gap-2">
+                      Read More
+                      <ArrowRight className="w-4 h-4" />
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default LearnBuildGrow;

@@ -27,6 +27,9 @@ const BlogPost = () => {
               <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
                 Home
               </Link>
+              <Link to="/learn-build-grow-with-ai" className="text-sm font-medium hover:text-primary transition-colors">
+                Learn
+              </Link>
               <Link to="/blog" className="text-sm font-medium hover:text-primary transition-colors">
                 Blog
               </Link>

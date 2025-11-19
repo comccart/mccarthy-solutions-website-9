@@ -24,6 +24,7 @@ const AITransparency = () => {
               <Link to="/#process" className="text-foreground hover:text-accent transition-colors">Process</Link>
               <Link to="/#results" className="text-foreground hover:text-accent transition-colors">Results</Link>
               <Link to="/#testimonials" className="text-foreground hover:text-accent transition-colors">Testimonials</Link>
+              <Link to="/learn-build-grow-with-ai" className="text-foreground hover:text-accent transition-colors">Learn</Link>
               <Link to="/case-studies" className="text-foreground hover:text-accent transition-colors">Case Studies</Link>
             </div>
 
@@ -59,6 +60,9 @@ const AITransparency = () => {
                     </Link>
                     <Link to="/#testimonials" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Testimonials
+                    </Link>
+                    <Link to="/learn-build-grow-with-ai" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
+                      Learn
                     </Link>
                     <Link to="/case-studies" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Case Studies

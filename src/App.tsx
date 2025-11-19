@@ -9,6 +9,10 @@ import BlogPost from "./pages/BlogPost";
 import CaseStudies from "./pages/CaseStudies";
 import Legal from "./pages/Legal";
 import AITransparency from "./pages/AITransparency";
+import LearnBuildGrow from "./pages/LearnBuildGrow";
+import AIStrategyThinkClearly from "./pages/AIStrategyThinkClearly";
+import AITrainingLeadershipSkill from "./pages/AITrainingLeadershipSkill";
+import AIImplementationMakeWorkLighter from "./pages/AIImplementationMakeWorkLighter";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +30,10 @@ const App = () => (
           <Route path="/case-studies" element={<CaseStudies />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/ai-transparency-notice" element={<AITransparency />} />
+          <Route path="/learn-build-grow-with-ai" element={<LearnBuildGrow />} />
+          <Route path="/ai-strategy-think-clearly" element={<AIStrategyThinkClearly />} />
+          <Route path="/ai-training-leadership-skill" element={<AITrainingLeadershipSkill />} />
+          <Route path="/ai-implementation-make-work-lighter" element={<AIImplementationMakeWorkLighter />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

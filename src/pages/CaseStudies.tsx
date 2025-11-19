@@ -38,6 +38,7 @@ const CaseStudies = () => {
               <a href="/#process" className="text-foreground hover:text-primary transition-colors">Process</a>
               <a href="/#results" className="text-foreground hover:text-primary transition-colors">Results</a>
               <a href="/#testimonials" className="text-foreground hover:text-primary transition-colors">Testimonials</a>
+              <a href="/learn-build-grow-with-ai" className="text-foreground hover:text-primary transition-colors">Learn</a>
               <a href="/case-studies" className="text-primary font-semibold">Case Studies</a>
             </div>
             
@@ -89,6 +90,13 @@ const CaseStudies = () => {
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       Testimonials
+                    </a>
+                    <a 
+                      href="/learn-build-grow-with-ai" 
+                      className="text-lg text-foreground hover:text-primary transition-colors py-2"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      Learn
                     </a>
                     <a 
                       href="/case-studies" 
