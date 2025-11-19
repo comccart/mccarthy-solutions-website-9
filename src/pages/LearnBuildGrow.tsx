@@ -166,6 +166,51 @@ const LearnBuildGrow = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-12 px-6 border-t border-border" style={{ backgroundColor: '#F5F1ED' }}>
+        <div className="container mx-auto max-w-6xl">
+          <div className="grid md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <img src={chevronLogo} alt="McCarthy Solutions" className="w-7 h-7" />
+                <div className="text-xl font-bold text-foreground">McCarthy Solutions</div>
+              </div>
+              <p className="text-muted-foreground text-sm">AI consultant for consultants and SME leaders.</p>
+              <p className="text-muted-foreground text-sm italic mt-3">"The illiterate of the 21st century will be those who cannot learn, unlearn, and relearn." - Alvin Toffler</p>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 text-foreground">Services</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="/#services" className="hover:text-accent transition-colors">AI Training</a></li>
+                <li><a href="/#services" className="hover:text-accent transition-colors">Strategy & Advisory</a></li>
+                <li><a href="/#services" className="hover:text-accent transition-colors">Implementation</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 text-foreground">Company</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><a href="/#process" className="hover:text-accent transition-colors">Process</a></li>
+                <li><a href="/#results" className="hover:text-accent transition-colors">Results</a></li>
+                <li><a href="/#testimonials" className="hover:text-accent transition-colors">Testimonials</a></li>
+                <li><a href="/case-studies" className="hover:text-accent transition-colors">Case Studies</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold mb-4 text-foreground">Legal</h4>
+              <ul className="space-y-2 text-sm text-muted-foreground">
+                <li><Link to="/legal#privacy-policy" className="hover:text-accent transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/legal#terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link></li>
+                <li><Link to="/legal#cookie-policy" className="hover:text-accent transition-colors">Cookie Policy</Link></li>
+                <li><Link to="/ai-transparency-notice" className="hover:text-accent transition-colors">AI Transparency Notice</Link></li>
+              </ul>
+            </div>
+          </div>
+          <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
+            © 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin. <a href="mailto:conor@mccarthy-solutions.com" className="hover:text-accent transition-colors underline">Get in touch</a>
+          </div>
+        </div>
+      </footer>
     </div>;
 };
 export default LearnBuildGrow;
