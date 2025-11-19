@@ -33,7 +33,7 @@ const AIStrategyThinkClearly = () => {
               <Link to="/#testimonials" className="text-foreground hover:text-accent transition-colors">
                 Testimonials
               </Link>
-              <Link to="/learn-build-grow-with-ai" className="text-accent font-semibold transition-colors">
+              <Link to="/learn-build-grow-with-ai" className="text-primary font-semibold transition-colors">
                 Learn
               </Link>
               <Link to="/case-studies" className="text-foreground hover:text-accent transition-colors">
