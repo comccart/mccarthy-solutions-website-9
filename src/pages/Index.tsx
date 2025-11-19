@@ -26,8 +26,32 @@ import chrisImage from "@/assets/chris.jpeg";
 import aimLogo from "@/assets/aim-logo.jpg";
 import enterpriseIrelandLogo from "@/assets/enterprise-ireland-logo.png";
 import euLogo from "@/assets/eu-logo.jpg";
+import amazonLogo from "@/assets/Amazon_logo.jpeg";
+import appleLogo from "@/assets/Apple_logo.png";
+import cocaColaLogo from "@/assets/Conor_McCarthy_CocaCola.png";
+import paypalLogo from "@/assets/Conor_McCarthy_PayPal_Logo.jpg";
+import deloitteLogo from "@/assets/Deloitte_logo.png";
+import googleLogo from "@/assets/Google_Optimised.png";
+import ibmLogo from "@/assets/IBM_logo.png";
+import louisVuittonLogo from "@/assets/Louis_Vuitton_Logo.png";
+import microsoftLogo from "@/assets/Microsoft_logo.png";
+import nikeLogo from "@/assets/Nike_logo.png";
 const Index = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  
+  const enterpriseLogos = [
+    { name: "Amazon", image: amazonLogo },
+    { name: "Apple", image: appleLogo },
+    { name: "Coca-Cola", image: cocaColaLogo },
+    { name: "PayPal", image: paypalLogo },
+    { name: "Deloitte", image: deloitteLogo },
+    { name: "Google", image: googleLogo },
+    { name: "IBM", image: ibmLogo },
+    { name: "Louis Vuitton", image: louisVuittonLogo },
+    { name: "Microsoft", image: microsoftLogo },
+    { name: "Nike", image: nikeLogo }
+  ];
+  
   const logos = [{
     name: "AltMBA",
     image: altmbaLogo
@@ -264,12 +288,41 @@ const Index = () => {
           {/* Trust Badge */}
           
 
-          {/* Logo Carousel */}
-          <div className="relative overflow-hidden py-8">
-            <div className="flex gap-12 animate-scroll">
-              {[...logos, ...logos].map((logo, i) => <div key={i} className="flex-shrink-0">
-                  <img src={logo.image} alt={logo.name} className="h-12 w-auto object-contain transition-all" />
-                </div>)}
+          {/* Enterprise Leaders Section - Static Grid */}
+          <div className="mb-12">
+            <h3 className="text-lg font-semibold text-muted-foreground mb-6 text-center">
+              Leaders I've supported.
+            </h3>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center justify-items-center">
+              {enterpriseLogos.map((logo, i) => (
+                <div key={i} className="flex items-center justify-center h-16 w-full">
+                  <img 
+                    src={logo.image} 
+                    alt={logo.name} 
+                    className="h-12 w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-70 hover:opacity-100" 
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Consultancy Clients Section - Animated Carousel */}
+          <div className="mb-8">
+            <h3 className="text-lg font-semibold text-muted-foreground mb-6 text-center">
+              Some of my current/past consultancy clients.
+            </h3>
+            <div className="relative overflow-hidden py-8">
+              <div className="flex gap-12 animate-scroll">
+                {[...logos, ...logos].map((logo, i) => (
+                  <div key={i} className="flex-shrink-0">
+                    <img 
+                      src={logo.image} 
+                      alt={logo.name} 
+                      className="h-12 w-auto object-contain transition-all" 
+                    />
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
