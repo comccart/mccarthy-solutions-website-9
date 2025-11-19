@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Menu } from "lucide-react";
+import { Menu, ArrowLeft } from "lucide-react";
 import { useState } from "react";
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
@@ -91,6 +91,12 @@ const AITrainingLeadershipSkill = () => {
       <main className="pt-24 pb-16">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
+            <Link to="/blog">
+              <Button variant="ghost" className="mb-8">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Blog
+              </Button>
+            </Link>
             <Badge variant="secondary" className="mb-6">
               Training
             </Badge>
