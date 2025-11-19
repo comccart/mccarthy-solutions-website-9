@@ -108,6 +108,55 @@ const AIImplementationMakeWorkLighter = () => {
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="bg-space-cadet text-isabeline py-16">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+            <div className="space-y-4">
+              <div className="flex items-center gap-2">
+                <img src={chevronLogo} alt="McCarthy Solutions" className="w-8 h-8" />
+                <div className="text-2xl font-bold">McCarthy Solutions</div>
+              </div>
+              <p className="text-isabeline/80">AI consultant for consultants and SME leaders.</p>
+              <p className="text-isabeline/60 italic">"The illiterate of the 21st century will be those who cannot learn, unlearn, and relearn." - Alvin Toffler</p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Services</h3>
+              <ul className="space-y-2">
+                <li><Link to="/#services" className="text-isabeline/80 hover:text-isabeline transition-colors">AI Training</Link></li>
+                <li><Link to="/#services" className="text-isabeline/80 hover:text-isabeline transition-colors">Strategy & Advisory</Link></li>
+                <li><Link to="/#services" className="text-isabeline/80 hover:text-isabeline transition-colors">Implementation</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Company</h3>
+              <ul className="space-y-2">
+                <li><Link to="/#process" className="text-isabeline/80 hover:text-isabeline transition-colors">Process</Link></li>
+                <li><Link to="/#results" className="text-isabeline/80 hover:text-isabeline transition-colors">Results</Link></li>
+                <li><Link to="/#testimonials" className="text-isabeline/80 hover:text-isabeline transition-colors">Testimonials</Link></li>
+                <li><Link to="/case-studies" className="text-isabeline/80 hover:text-isabeline transition-colors">Case Studies</Link></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-semibold mb-4">Legal</h3>
+              <ul className="space-y-2">
+                <li><Link to="/legal#privacy" className="text-isabeline/80 hover:text-isabeline transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/legal#terms" className="text-isabeline/80 hover:text-isabeline transition-colors">Terms of Service</Link></li>
+                <li><Link to="/legal#cookies" className="text-isabeline/80 hover:text-isabeline transition-colors">Cookie Policy</Link></li>
+                <li><Link to="/ai-transparency" className="text-isabeline/80 hover:text-isabeline transition-colors">AI Transparency Notice</Link></li>
+              </ul>
+            </div>
+          </div>
+
+          <div className="border-t border-isabeline/20 pt-8 text-center text-isabeline/60">
+            <p>© 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin. <a href="mailto:hello@mccarthysolutions.ie" className="hover:text-isabeline transition-colors underline">Get in touch</a></p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
