@@ -160,12 +160,11 @@ const Index = () => {
             </div>
 
             <div className="flex items-center gap-4">
-              <Button variant="default" size="lg" className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg gap-2" onClick={(e) => {
+              <Button variant="default" size="lg" className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg" onClick={(e) => {
                 e.preventDefault();
                 document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
               }}>
-                Get in touch
-                <ArrowRight className="w-4 h-4" />
+                Book free intro call
               </Button>
               
               <Drawer open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
@@ -197,15 +196,14 @@ const Index = () => {
                     <Link to="/case-studies" className="text-lg text-foreground hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>
                       Case Studies
                     </Link>
-                    <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg mt-4 gap-2" onClick={(e) => {
+                    <Button variant="default" size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg mt-4" onClick={(e) => {
                       e.preventDefault();
                       setMobileMenuOpen(false);
                       setTimeout(() => {
                         document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
                       }, 300);
                     }}>
-                      Get in touch
-                      <ArrowRight className="w-4 h-4" />
+                      Book free intro call
                     </Button>
                   </div>
                 </DrawerContent>
