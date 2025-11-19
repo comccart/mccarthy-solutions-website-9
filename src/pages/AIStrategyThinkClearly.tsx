@@ -168,7 +168,7 @@ const AIStrategyThinkClearly = () => {
               <br />
               <br />
               That might look like:
-              <ul>
+              <ul className="list-disc list-inside">
                 <li>Running the numbers before you bet the quarter</li>
                 <li>Turning rough thoughts into sharp decisions</li>
                 <li>Getting from idea to action before the mood changes</li>
