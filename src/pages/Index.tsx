@@ -877,7 +877,7 @@ const Index = () => {
           </div>
           
           {/* Responsible AI Box */}
-          <div className="pt-6 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm text-muted-foreground border rounded-lg p-4 bg-white/50">
+          <div className="pt-4 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm text-muted-foreground border rounded-lg py-2.5 px-4 bg-white/50">
             <Shield className="h-5 w-5 text-accent flex-shrink-0" />
             <span className="font-medium text-foreground">Responsible AI:</span>
             <span className="text-center sm:text-left">We check outputs before use</span>
