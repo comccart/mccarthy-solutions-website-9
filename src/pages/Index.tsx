@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Target, BarChart3, Shield, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket, Menu } from "lucide-react";
+import { Download, ExternalLink, Star, CheckCircle2, TrendingUp, Users, Target, BarChart3, ShieldCheck, Award, Clock, ArrowRight, Sparkles, Bot, GraduationCap, Workflow, LineChart, Puzzle, Rocket, Menu } from "lucide-react";
 import { useState } from "react";
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
@@ -878,7 +878,7 @@ const Index = () => {
           
           {/* Responsible AI Box */}
           <div className="pt-4 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm text-muted-foreground border rounded-lg py-2.5 px-4 bg-white/50">
-            <Shield className="h-5 w-5 text-accent flex-shrink-0" />
+            <ShieldCheck className="h-5 w-5 text-accent flex-shrink-0" />
             <span className="font-medium text-foreground">Responsible AI:</span>
             <span className="text-center sm:text-left">We check outputs before use</span>
             <span className="hidden sm:inline">•</span>

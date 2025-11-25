@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Menu, ArrowLeft, Shield } from "lucide-react";
+import { Menu, ArrowLeft, ShieldCheck } from "lucide-react";
 import { useState } from "react";
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
@@ -317,7 +317,7 @@ const AIImplementationMakeWorkLighter = () => {
           
           {/* Responsible AI Box */}
           <div className="pt-4 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm border rounded-lg py-2.5 px-4 bg-isabeline/10">
-            <Shield className="h-5 w-5 text-orange flex-shrink-0" />
+            <ShieldCheck className="h-5 w-5 text-orange flex-shrink-0" />
             <span className="font-medium text-isabeline">Responsible AI:</span>
             <span className="text-center sm:text-left text-isabeline/80">We check outputs before use</span>
             <span className="hidden sm:inline text-isabeline/80">•</span>

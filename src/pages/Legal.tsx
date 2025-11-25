@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Menu, ExternalLink, Shield } from "lucide-react";
+import { Menu, ExternalLink, ShieldCheck } from "lucide-react";
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
 
@@ -641,7 +641,7 @@ const Legal = () => {
           
           {/* Responsible AI Box */}
           <div className="pt-4 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm text-muted-foreground border rounded-lg py-2.5 px-4 bg-white/50">
-            <Shield className="h-5 w-5 text-accent flex-shrink-0" />
+            <ShieldCheck className="h-5 w-5 text-accent flex-shrink-0" />
             <span className="font-medium text-foreground">Responsible AI:</span>
             <span className="text-center sm:text-left">We check outputs before use</span>
             <span className="hidden sm:inline">•</span>
