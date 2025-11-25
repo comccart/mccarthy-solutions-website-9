@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Menu, ArrowRight } from "lucide-react";
+import { Menu, ArrowRight, Shield } from "lucide-react";
 import { useState } from "react";
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
@@ -206,6 +206,19 @@ const LearnBuildGrow = () => {
               </ul>
             </div>
           </div>
+          
+          {/* Responsible AI Box */}
+          <div className="pt-6 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm text-muted-foreground border rounded-lg p-4 bg-white/50">
+            <Shield className="h-5 w-5 text-accent flex-shrink-0" />
+            <span className="font-medium text-foreground">Responsible AI:</span>
+            <span className="text-center sm:text-left">We check outputs before use</span>
+            <span className="hidden sm:inline">•</span>
+            <span className="text-center sm:text-left">We don't automate decisions about people</span>
+            <span className="hidden sm:inline">•</span>
+            <span className="text-center sm:text-left">We review tools regularly</span>
+            <Link to="/ai-transparency-notice" className="text-accent hover:underline ml-0 sm:ml-2 mt-2 sm:mt-0">Learn more →</Link>
+          </div>
+          
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
             © 2025 McCarthy Solutions. All rights reserved. Built with 💚 in Dublin. <a href="mailto:conor@mccarthy-solutions.com" className="hover:text-accent transition-colors underline">Get in touch</a>
           </div>

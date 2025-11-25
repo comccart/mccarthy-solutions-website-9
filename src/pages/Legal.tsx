@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Menu, ExternalLink } from "lucide-react";
+import { Menu, ExternalLink, Shield } from "lucide-react";
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
 
@@ -637,6 +637,18 @@ const Legal = () => {
                 <li><Link to="/ai-transparency-notice" className="hover:text-accent transition-colors">AI Transparency Notice</Link></li>
               </ul>
             </div>
+          </div>
+          
+          {/* Responsible AI Box */}
+          <div className="pt-6 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm text-muted-foreground border rounded-lg p-4 bg-white/50">
+            <Shield className="h-5 w-5 text-accent flex-shrink-0" />
+            <span className="font-medium text-foreground">Responsible AI:</span>
+            <span className="text-center sm:text-left">We check outputs before use</span>
+            <span className="hidden sm:inline">•</span>
+            <span className="text-center sm:text-left">We don't automate decisions about people</span>
+            <span className="hidden sm:inline">•</span>
+            <span className="text-center sm:text-left">We review tools regularly</span>
+            <Link to="/ai-transparency-notice" className="text-accent hover:underline ml-0 sm:ml-2 mt-2 sm:mt-0">Learn more →</Link>
           </div>
 
           <div className="pt-8 border-t border-border text-center text-sm text-muted-foreground">
