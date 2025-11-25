@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Menu, ArrowLeft } from "lucide-react";
+import { Menu, ArrowLeft, Shield } from "lucide-react";
 import { useState } from "react";
 import { Drawer, DrawerClose, DrawerContent, DrawerHeader, DrawerTitle, DrawerTrigger } from "@/components/ui/drawer";
 import chevronLogo from "@/assets/chevron-logo.png";
@@ -272,6 +272,18 @@ const AIStrategyThinkClearly = () => {
                 <li><Link to="/ai-transparency" className="text-isabeline/80 hover:text-isabeline transition-colors">AI Transparency Notice</Link></li>
               </ul>
             </div>
+          </div>
+          
+          {/* Responsible AI Box */}
+          <div className="pt-6 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm border rounded-lg p-4 bg-isabeline/10">
+            <Shield className="h-5 w-5 text-orange flex-shrink-0" />
+            <span className="font-medium text-isabeline">Responsible AI:</span>
+            <span className="text-center sm:text-left text-isabeline/80">We check outputs before use</span>
+            <span className="hidden sm:inline text-isabeline/80">•</span>
+            <span className="text-center sm:text-left text-isabeline/80">We don't automate decisions about people</span>
+            <span className="hidden sm:inline text-isabeline/80">•</span>
+            <span className="text-center sm:text-left text-isabeline/80">We review tools regularly</span>
+            <Link to="/ai-transparency-notice" className="text-orange hover:underline ml-0 sm:ml-2 mt-2 sm:mt-0">Learn more →</Link>
           </div>
 
           <div className="border-t border-isabeline/20 pt-8 text-center text-isabeline/60">
