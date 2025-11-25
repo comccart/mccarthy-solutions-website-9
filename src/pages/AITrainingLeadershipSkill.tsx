@@ -324,7 +324,7 @@ const AITrainingLeadershipSkill = () => {
           </div>
           
           {/* Responsible AI Box */}
-          <div className="pt-6 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm border rounded-lg p-4 bg-isabeline/10">
+          <div className="pt-4 mb-6 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 text-sm border rounded-lg py-2.5 px-4 bg-isabeline/10">
             <Shield className="h-5 w-5 text-orange flex-shrink-0" />
             <span className="font-medium text-isabeline">Responsible AI:</span>
             <span className="text-center sm:text-left text-isabeline/80">We check outputs before use</span>
