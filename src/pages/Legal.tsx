@@ -605,6 +605,7 @@ const Legal = () => {
                 <li><Link to="/#results" className="hover:text-accent transition-colors">Results</Link></li>
                 <li><Link to="/#testimonials" className="hover:text-accent transition-colors">Testimonials</Link></li>
                 <li><Link to="/case-studies" className="hover:text-accent transition-colors">Case Studies</Link></li>
+                <li><Link to="/ai-manifesto" className="hover:text-accent transition-colors">AI Manifesto</Link></li>
               </ul>
             </div>
             <div>
@@ -635,7 +636,6 @@ const Legal = () => {
                   </button>
                 </li>
                 <li><Link to="/ai-transparency-notice" className="hover:text-accent transition-colors">AI Transparency Notice</Link></li>
-                <li><Link to="/ai-manifesto" className="hover:text-accent transition-colors">AI Manifesto</Link></li>
               </ul>
             </div>
           </div>
