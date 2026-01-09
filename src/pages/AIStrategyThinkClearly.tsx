@@ -270,6 +270,7 @@ const AIStrategyThinkClearly = () => {
                 <li><Link to="/legal#terms" className="text-isabeline/80 hover:text-isabeline transition-colors">Terms of Service</Link></li>
                 <li><Link to="/legal#cookies" className="text-isabeline/80 hover:text-isabeline transition-colors">Cookie Policy</Link></li>
                 <li><Link to="/ai-transparency" className="text-isabeline/80 hover:text-isabeline transition-colors">AI Transparency Notice</Link></li>
+                <li><Link to="/ai-manifesto" className="text-isabeline/80 hover:text-isabeline transition-colors">AI Manifesto</Link></li>
               </ul>
             </div>
           </div>
