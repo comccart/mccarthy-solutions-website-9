@@ -635,6 +635,7 @@ const Legal = () => {
                   </button>
                 </li>
                 <li><Link to="/ai-transparency-notice" className="hover:text-accent transition-colors">AI Transparency Notice</Link></li>
+                <li><Link to="/ai-manifesto" className="hover:text-accent transition-colors">AI Manifesto</Link></li>
               </ul>
             </div>
           </div>

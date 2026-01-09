@@ -13,6 +13,7 @@ import LearnBuildGrow from "./pages/LearnBuildGrow";
 import AIStrategyThinkClearly from "./pages/AIStrategyThinkClearly";
 import AITrainingLeadershipSkill from "./pages/AITrainingLeadershipSkill";
 import AIImplementationMakeWorkLighter from "./pages/AIImplementationMakeWorkLighter";
+import AIManifesto from "./pages/AIManifesto";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -34,6 +35,7 @@ const App = () => (
           <Route path="/ai-strategy-think-clearly" element={<AIStrategyThinkClearly />} />
           <Route path="/ai-training-leadership-skill" element={<AITrainingLeadershipSkill />} />
           <Route path="/ai-implementation-make-work-lighter" element={<AIImplementationMakeWorkLighter />} />
+          <Route path="/ai-manifesto" element={<AIManifesto />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
