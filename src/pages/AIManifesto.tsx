@@ -202,6 +202,7 @@ const AIManifesto = () => {
                 <li><Link to="/#results" className="hover:text-accent transition-colors">Results</Link></li>
                 <li><Link to="/#testimonials" className="hover:text-accent transition-colors">Testimonials</Link></li>
                 <li><Link to="/case-studies" className="hover:text-accent transition-colors">Case Studies</Link></li>
+                <li><Link to="/ai-manifesto" className="hover:text-accent transition-colors">AI Manifesto</Link></li>
               </ul>
             </div>
             <div>
@@ -211,7 +212,6 @@ const AIManifesto = () => {
                 <li><Link to="/legal#terms-of-service" className="hover:text-accent transition-colors">Terms of Service</Link></li>
                 <li><Link to="/legal#cookie-policy" className="hover:text-accent transition-colors">Cookie Policy</Link></li>
                 <li><Link to="/ai-transparency-notice" className="hover:text-accent transition-colors">AI Transparency Notice</Link></li>
-                <li><Link to="/ai-manifesto" className="hover:text-accent transition-colors">AI Manifesto</Link></li>
               </ul>
             </div>
           </div>

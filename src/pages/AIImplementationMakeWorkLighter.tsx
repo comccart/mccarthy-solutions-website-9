@@ -285,6 +285,11 @@ const AIImplementationMakeWorkLighter = () => {
                     Case Studies
                   </Link>
                 </li>
+                <li>
+                  <Link to="/ai-manifesto" className="text-isabeline/80 hover:text-isabeline transition-colors">
+                    AI Manifesto
+                  </Link>
+                </li>
               </ul>
             </div>
 
@@ -309,11 +314,6 @@ const AIImplementationMakeWorkLighter = () => {
                 <li>
                   <Link to="/ai-transparency" className="text-isabeline/80 hover:text-isabeline transition-colors">
                     AI Transparency Notice
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/ai-manifesto" className="text-isabeline/80 hover:text-isabeline transition-colors">
-                    AI Manifesto
                   </Link>
                 </li>
               </ul>
